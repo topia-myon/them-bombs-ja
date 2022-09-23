@@ -1,0 +1,44 @@
+\begin{minipage}{0.63\textwidth}
+    \parskip=1em
+    \section*{セキュリティモジュール：5文字のコード}
+    
+    \uline{概要}：数字の並び{、}5文字のディスプレイ（上下の矢印を使用して文字を変更できます）{、}および\hfill\\{[OK]}ボタンがある鉄板。
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.33\textwidth}
+    \includegraphics[width=\textwidth]{images/9.png}
+    \vspace*{\fill}
+\end{minipage}
+
+\uline{解除方法}：正しい5文字のコードを入力し{、} {[OK]}を押します。\\
+左から順番に数字を足していきます。偶数の桁になったら{、}足すのをやめます。（ただし{、}偶数の桁も足します。）下の表で結果を見つけてください。\\
+残りの桁について{、}この過程を繰り返します。
+
+例：\\
+\hspace*{3em}1112の合計は5になり、文字Aに対応します。\\
+\hspace*{3em}1112330は5と6になり、文字AとBに対応します。
+
+
+\begin{center}
+\large
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l}
+    \hline
+    A - \ 5 \hspace*{1em}  & J - \ 17\hspace*{1em}  & \multicolumn{1}{l|}{S - \ 2\hspace*{1em} }   \\ \hline
+    B - \ 6 \hspace*{1em}  & K - \ 21\hspace*{1em}  & \multicolumn{1}{l|}{T - \ 7\hspace*{1em} }   \\ \hline
+    C - \ 27\hspace*{1em}  & L - \ 8 \hspace*{1em}  & \multicolumn{1}{l|}{U - \ 25\hspace*{1em} } \\ \hline
+    D - \ 12\hspace*{1em}  & M - \ 14\hspace*{1em}  & \multicolumn{1}{l|}{V - \ 15\hspace*{1em} } \\ \hline
+    E - \ 0 \hspace*{1em}  & N - \ 10\hspace*{1em}  & \multicolumn{1}{l|}{W - \ 16\hspace*{1em} } \\ \hline
+    F - \ 11\hspace*{1em}  & O - \ 3 \hspace*{1em}  & \multicolumn{1}{l|}{X - \ 19\hspace*{1em} } \\ \hline
+    G - \ 26\hspace*{1em}  & P - \ 22\hspace*{1em}  & \multicolumn{1}{l|}{Y - \ 20\hspace*{1em} } \\ \hline
+    H - \ 13\hspace*{1em}  & Q - \ 18\hspace*{1em}  & \multicolumn{1}{l|}{Z - \ 24\hspace*{1em} } \\ \hline
+    I - \ 4 \hspace*{1em}  & R - \ 9 \hspace*{1em}  &                             \\\cline{1-2}
+\end{tabular}
+\end{center}
+
+
+「まだ生きている爆発物処理班」の為のヒント:
+\begin{itemize}
+    \item[$\bullet$] 数列にはちょうど5つの偶数があります。
+    \item[$\bullet$] 「ゼロ」も偶数！
+\end{itemize}

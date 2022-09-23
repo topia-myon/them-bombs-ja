@@ -1,0 +1,50 @@
+\begin{minipage}{0.63\textwidth}
+\parskip=1em
+\section*{セキュリティモジュール：3つの点滅するボタン}
+
+\uline{概要}：1文字のディスプレイと3つのカラフルな点滅ボタンがあります。
+
+\uline{解除方法}：各ボタンが正しい色で点滅しているときにボタンを押します。
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.33\textwidth}
+    \includegraphics[width=\textwidth]{images/4.png}
+    \vspace*{\fill}
+\end{minipage}
+
+正しい色のセットは、次のように決定されます。\\
+1. ディスプレイに表示される文字（文字は定期的に変わります！）\\
+2. 爆発までの残り時間。
+
+下の表でライトの色の正しい組み合わせを見つけてください。
+
+\uline{表の読み方}：縦線で区切られた3つの文字は{、}3つのボタンの色に対応しています。表示される色は次のとおりです。\\
+\hspace*{6em} Y -- 黄\hspace*{3em}R -- 赤\hspace*{3em}B -- 青
+
+例：Y|R|B -- \uline{黄、赤、青の順}で点滅する瞬間に各ボタンを押します。
+
+\bgroup%
+\def\arraystretch{1.5}
+\fontsize{10.5}{13}\selectfont
+\def\emphchar#1{\raisebox{-.1em}{\large\bfseries #1}}
+\begin{tabular}{c|ccccccc|}
+    \cline{2-8}
+                                             & \multicolumn{7}{c|}{表示されている文字} \\ \hline
+    \multicolumn{1}{|c|}{残り時間} & \emphchar{A} & \emphchar{B} & \emphchar{C} & \emphchar{D} & \emphchar{E} & \emphchar{F} & \emphchar{G} \\ \hline
+    \multicolumn{1}{|c|}{240秒超過}            & Y|B|R & Y|R|Y & R|R|R & B|Y|B & B|B|B & R|Y|R & Y|Y|Y \\
+    \multicolumn{1}{|c|}{120秒超過{、}240秒以下} & B|Y|B & B|R|B & B|B|Y & Y|Y|R & R|B|Y & R|Y|Y & Y|B|R \\
+    \multicolumn{1}{|c|}{60秒超過{、}120秒以下}  & Y|Y|Y & B|B|B & R|Y|Y & Y|B|R & B|B|Y & B|R|B & Y|Y|R \\
+    \multicolumn{1}{|c|}{60秒以下}         & R|R|R & B|B|Y & R|Y|R & R|B|Y & B|R|B & Y|R|Y & R|R|R \\ \hline
+\end{tabular}%
+\egroup
+
+\begin{center}
+    (240秒 = 4分, 120秒 = 2分, 60秒 = 1分)
+\end{center}
+
+「まだ生きている爆発物処理班」の為のヒント:
+\begin{itemize}
+    \item[$\bullet$] 最初の2つのボタンについては{、}正しい色を押すときに間違いを犯してもいいです。（シーケンスを続行するには{、}もう一度押すだけです。） ただし{、}3番目のボタンを押すときは{、}正しくないと不快な結果が生じます。
+    \item[$\bullet$] とても難しい仕事に思えますか？黒と押したい色の間に現れる色の数を覚えてみてください。
+\end{itemize}
+

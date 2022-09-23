@@ -1,0 +1,8 @@
+{
+    "latex-workshop.latex.external.build.command": "/opt/homebrew/bin/tectonic",
+    "latex-workshop.latex.external.build.args": [
+        "-X",
+        "build"
+    ],
+    "latex-workshop.latex.autoBuild.run": "onSave"
+}

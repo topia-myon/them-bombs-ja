@@ -1,0 +1,27 @@
+\section*{付録III：モース符号}
+
+爆弾のセキュリティモジュールの多くは、モールス符号に基づいています。点は、短い光（または音）信号を表します。線は長い信号を表します。長い信号は、短い信号よりも3倍長くなります。
+
+\vspace*{1em}
+
+\newcommand{\dt}{\kern-0.5pt\raisebox{0.4ex}{.}}
+
+\bgroup
+\Large
+\def\arraystretch{1.5}
+\begin{tabular}{|p{0.3\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+\hline
+A\quad \dt-         & M\quad --         & Y\quad -\dt-- \\ \hline
+B\quad -\dt\dt\dt   & N\quad -\dt       & Z\quad --\dt\dt \\ \hline
+C\quad -\dt-\dt     & O\quad ---        & 1\quad \dt---- \\ \hline
+D\quad -\dt\dt      & P\quad \dt--\dt   & 2\quad \dt\dt--- \\ \hline
+E\quad \dt          & Q\quad --\dt-     & 3\quad \dt\dt\dt-- \\ \hline
+F\quad \dt\dt-\dt   & R\quad \dt-\dt    & 4\quad \dt\dt\dt\dt- \\ \hline
+G\quad --\dt        & S\quad \dt\dt\dt  & 5\quad \dt\dt\dt\dt\dt \\ \hline
+H\quad \dt\dt\dt\dt & T\quad -          & 6\quad -\dt\dt\dt\dt \\ \hline
+I\quad \dt\dt       & U\quad \dt\dt-    & 7\quad --\dt\dt\dt \\ \hline
+J\quad \dt---       & V\quad \dt\dt\dt- & 8\quad ---\dt\dt \\ \hline
+K\quad -\dt-        & W\quad \dt--      & 9\quad ----\dt \\ \hline
+L\quad \dt-\dt\dt   & X\quad -\dt\dt-   & 0\quad ----- \\ \hline
+\end{tabular}
+\egroup
